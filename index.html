@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 | Luzmary Paz | Home Page</title>
+    <meta name="description" content="Home page for WDD 231 course work including chamber and final project links.">
+    <meta name="author" content="YLuzmary Paz">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Site Logo">
+        <span>Luzmary Paz</span>
+        <button id="menu" aria-label="Open Menu"></button>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="final/index.html">Final Project</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+
+        <section class="card">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem necessitatibus quam esse aut excepturi totam dolores minus? Quaerat, adipisci consectetur dignissimos quibusdam ad voluptatibus rerum alias dolorum ab quod quo..</p>
+        </section>
+
+        <section class="card">
+            <h2>Student Photo</h2>
+            <div class="photo-placeholder">
+                <img src="images/portrait.jpg" alt="Student Profile Photo">
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Web Certificate Courses</h2>
+            <div class="filter-buttons">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+            <div id="course-list">
+            </div>
+            <p class="credit-total">The total credits for course listed above is <span id="total-credits"></span></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="#"><img src="images/linkedin_1.svg" alt="LinkedIn"></a>
+            <a href="#"><img src="images/github.svg" alt="GitHub"></a>
+            <a href="#"><img src="images/x_1.svg" alt="X"></a>
+        </div>
+        <div class="footer-info">
+            <p>&copy; <span id="currentyear"></span> • Luzmary Paz • Falcon • Venezuela</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>

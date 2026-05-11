@@ -1,0 +1,41 @@
+@media (min-width: 640px) {
+
+    /* Hide the hamburger button since we have room for the full menu */
+    #menu {
+        display: none;
+    }
+
+    /* Force the navigation list to show and sit side-by-side */
+    .navigation {
+        display: flex;
+        /* This makes them go horizontal */
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background-color: #29576b;
+    }
+
+    .navigation li {
+        flex: 1;
+        /* Gives each link equal width */
+        text-align: center;
+    }
+
+    .navigation li a {
+        display: block;
+        padding: 15px 20px;
+        color: white;
+        text-decoration: none;
+    }
+
+    /* Wayfinding: The 'active' page looks like your screenshot (grayer background) */
+    .navigation li a.active {
+        background-color: #29576b;
+        color: #fff;
+    }
+
+    /* Hover effect to prevent "twitching" */
+    .navigation li a:hover {
+        background-color: #7f7e7e;
+    }
+}
