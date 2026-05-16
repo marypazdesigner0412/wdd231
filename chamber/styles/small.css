@@ -1,0 +1,123 @@
+/* --- Variables & Base --- */
+:root {
+    --primary: #003366;
+    /* Caribbean Blue */
+    --secondary: #E1AD01;
+    /* Médanos Gold */
+    --bg-color: #F9F9F9;
+    --card-bg: #ffffff;
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+}
+
+/* --- Header & Nav --- */
+header {
+    background-color: var(--primary);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header img {
+    width: 60px;
+    height: auto;
+}
+
+#menu-toggle {
+    font-size: 1.5rem;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+#nav-list {
+    list-style: none;
+    padding: 0;
+    display: none;
+    /* Mobile menu hidden by default */
+}
+
+#nav-list.open {
+    display: block;
+}
+
+#nav-list li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* --- Directory Controls --- */
+.directory-controls {
+    text-align: center;
+    padding: 1.5rem;
+    background: #eee;
+}
+
+.directory-controls button {
+    padding: 0.8rem 1.2rem;
+    margin: 5px;
+    cursor: pointer;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+/* --- Member Display --- */
+#member-container {
+    padding: 1rem;
+}
+
+/* Default Card Style (Grid View on Mobile) */
+.grid section {
+    background: var(--card-bg);
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.grid section img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* List View Style */
+.list section {
+    display: flex;
+    flex-direction: column;
+    padding: 0.75rem;
+    border-bottom: 1px solid #ccc;
+    background: white;
+}
+
+.list section:nth-child(even) {
+    background: #f0f0f0;
+}
+
+.list section img {
+    display: none;
+    /* Hide images in List view for cleaner look */
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}

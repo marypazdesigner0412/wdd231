@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Directory | Cámara de Comercio Paraguaná</title>
+    <meta name="description"
+        content="Explore the official business directory of Paraguaná, Falcón. Connecting you with local industry, tourism, and trade leaders.">
+    <meta name="author" content="Luzmary Paz">
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Business Directory | Cámara de Comercio Paraguaná">
+    <meta property="og:description" content="Discover verified businesses in the Paraguaná Free Trade Zone.">
+    <meta property="og:image" content="https://luzmapazdesigner0412/wdd231/chamber/images/og-image.jpg">
+    <meta property="og:url" content="https://luzmapazdesigner0412/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 700px)">
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-box">
+            <img src="images/chamber-logo.png" alt="Paraguaná Chamber Logo">
+            <h1>Cámara de Comercio Paraguaná</h1>
+        </div>
+        <nav>
+            <button id="menu-toggle">☰</button>
+            <ul id="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="directory-controls">
+            <button id="grid-btn">Grid View</button>
+            <button id="list-btn">List View</button>
+        </div>
+
+        <article id="member-container" class="grid"></article>
+    </main>
+
+    <footer>
+        <div class="footer-contact">
+            <p><strong>Cámara de Comercio Paraguaná</strong></p>
+            <p>Punto Fijo, Falcón, Venezuela</p>
+            <p>+58 (412) 772.30.22 | luzmapaz@gmail.com</p>
+        </div>
+        <div class="footer-info">
+            <p>&copy; <span id="year"></span> | Luzmary Paz | WDD 231</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

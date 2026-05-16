@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Sambil Paraguaná",
+        "address": "Av. Intercomunal Alí Primera, Punto Fijo",
+        "phone": "+58 269-4100000",
+        "url": "https://www.sambil.com.ve",
+        "image": "sambil-logo.webp",
+        "level": 3,
+        "other": "Retail and Entertainment Hub"
+    },
+    {
+        "name": "Hotel Las Virtudes",
+        "address": "Urb. Las Virtudes, Punto Fijo",
+        "phone": "+58 269-2481011",
+        "url": "https://hotellasvirtudes.com",
+        "image": "virtudes-logo.webp",
+        "level": 2,
+        "other": "Premium Business Lodging"
+    }
+]

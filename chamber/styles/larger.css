@@ -1,0 +1,56 @@
+/* Only applied for screens 700px and wider */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+}
+
+#menu-toggle {
+    display: none;
+    /* Hide hamburger on desktop */
+}
+
+#nav-list {
+    display: flex;
+    /* Show links horizontally */
+}
+
+#nav-list li a {
+    border: none;
+}
+
+#nav-list li a:hover {
+    color: var(--secondary);
+}
+
+/* --- Grid View Layout --- */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* --- List View Layout --- */
+.list section {
+    flex-direction: row;
+    /* Row layout for desktop list */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list h3 {
+    width: 25%;
+    margin: 0;
+}
+
+.list p {
+    margin: 0;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
