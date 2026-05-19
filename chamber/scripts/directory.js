@@ -1,37 +1,53 @@
 // Footer Dates
-document.getElementById("year").textContent = new Date().getFullYear();
-document.getElementById("lastModified").textContent = document.lastModified;
+const yearEl = document.getElementById("year");
+if (yearEl) yearEl.textContent = new Date().getFullYear();
+const lastModEl = document.getElementById("lastModified");
+if (lastModEl) lastModEl.textContent = document.lastModified;
 
 // Hamburger Menu
 const menuBtn = document.getElementById("menu-toggle");
 const navList = document.getElementById("nav-list");
-menuBtn.addEventListener("click", () => navList.classList.toggle("open"));
+if (menuBtn && navList) {
+    menuBtn.addEventListener("click", () => navList.classList.toggle("open"));
+}
 
 // Directory Toggle
 const container = document.getElementById("member-container");
 const gridBtn = document.getElementById("grid-btn");
 const listBtn = document.getElementById("list-btn");
 
-gridBtn.addEventListener("click", () => {
-    container.classList.add("grid");
-    container.classList.remove("list");
-});
+if (gridBtn && container) {
+    gridBtn.addEventListener("click", () => {
+        container.classList.add("grid");
+        container.classList.remove("list");
+    });
+}
 
-listBtn.addEventListener("click", () => {
-    container.classList.add("list");
-    container.classList.remove("grid");
-});
+if (listBtn && container) {
+    listBtn.addEventListener("click", () => {
+        container.classList.add("list");
+        container.classList.remove("grid");
+    });
+}
 
 // Fetch Data
 const url = "data/members.json";
 
 async function getMembers() {
-    const response = await fetch(url);
-    const data = await response.json();
-    displayMembers(data);
+    try {
+        const response = await fetch(url);
+        if (!response.ok) throw new Error(`Network response was not ok: ${response.status} ${response.statusText}`);
+        const data = await response.json();
+        if (!container) return;
+        displayMembers(data);
+    } catch (err) {
+        console.error('Failed to load members:', err);
+        if (container) container.innerHTML = '<p class="error">Failed to load directory data.</p>';
+    }
 }
 
 function displayMembers(members) {
+    if (!container) return;
     container.innerHTML = ""; // Clear current content
     members.forEach(member => {
         let card = document.createElement("section");
