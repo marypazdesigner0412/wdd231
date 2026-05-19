@@ -33,6 +33,27 @@ if (listBtn && container) {
 // Fetch Data
 const url = "data/members.json";
 
+const fallbackMembers = [
+    {
+        name: "Sambil Paraguaná",
+        address: "Av. Intercomunal Alí Primera, Punto Fijo",
+        phone: "+58 269-4100000",
+        url: "https://www.sambil.com.ve",
+        image: "sambil-logo.webp",
+        level: 3,
+        other: "Retail and Entertainment Hub"
+    },
+    {
+        name: "Hotel Las Virtudes",
+        address: "Urb. Las Virtudes, Punto Fijo",
+        phone: "+58 269-2481011",
+        url: "https://hotellasvirtudes.com",
+        image: "logo-virtudes.webp",
+        level: 2,
+        other: "Premium Business Lodging"
+    }
+];
+
 async function getMembers() {
     try {
         const response = await fetch(url);
@@ -41,8 +62,10 @@ async function getMembers() {
         if (!container) return;
         displayMembers(data);
     } catch (err) {
-        console.error('Failed to load members:', err);
-        if (container) container.innerHTML = '<p class="error">Failed to load directory data.</p>';
+        console.warn('Fetch failed; using fallback member data.', err);
+        if (!container) return;
+        container.innerHTML = '<p class="error">Unable to fetch directory data. Showing fallback directory content.</p>';
+        displayMembers(fallbackMembers);
     }
 }
 
