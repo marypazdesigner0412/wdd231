@@ -24,9 +24,22 @@ header {
     text-align: center;
 }
 
+h1 {
+    font-size: medium;
+}
+
 header img {
-    width: 60px;
+    width: 120px;
     height: auto;
+
+}
+
+.site-title {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: inherit;
+    margin-top: 0.25rem;
 }
 
 #menu-toggle {
@@ -110,10 +123,9 @@ header img {
 
 .list section img {
     display: none;
-    /* Hide images in List view for cleaner look */
+
 }
 
-/* --- Footer --- */
 footer {
     background-color: #333;
     color: white;
