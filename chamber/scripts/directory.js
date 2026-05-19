@@ -16,10 +16,17 @@ const container = document.getElementById("member-container");
 const gridBtn = document.getElementById("grid-btn");
 const listBtn = document.getElementById("list-btn");
 
+// Set default button wayfinding state on load
+if (gridBtn) gridBtn.classList.add("active-view");
+
 if (gridBtn && container) {
     gridBtn.addEventListener("click", () => {
         container.classList.add("grid");
         container.classList.remove("list");
+
+        // --- WAYFINDING CUES ---
+        gridBtn.classList.add("active-view");
+        if (listBtn) listBtn.classList.remove("active-view");
     });
 }
 
@@ -27,6 +34,10 @@ if (listBtn && container) {
     listBtn.addEventListener("click", () => {
         container.classList.add("list");
         container.classList.remove("grid");
+
+        // --- WAYFINDING CUES ---
+        listBtn.classList.add("active-view");
+        if (gridBtn) gridBtn.classList.remove("active-view");
     });
 }
 

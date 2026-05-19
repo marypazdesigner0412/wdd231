@@ -79,13 +79,21 @@ header img {
 }
 
 .directory-controls button {
-    padding: 0.8rem 1.2rem;
-    margin: 5px;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border: 1px solid #ccc;
+    padding: 0.6rem 1.2rem;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.directory-controls button.active-view {
     background-color: var(--primary);
-    color: white;
-    border: none;
-    border-radius: 4px;
+    /* Caribbean Blue background */
+    color: var(--card-bg);
+    /* White text for crisp contrast */
+    border-color: var(--primary);
+    font-weight: bold;
 }
 
 /* --- Member Display --- */
