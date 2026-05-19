@@ -1,63 +1,66 @@
-/* Only applied for screens 700px and wider */
+/* Desktop / large screens */
+@media (min-width: 700px) {
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 5%;
-}
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 5%;
+    }
 
-.site-title {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: inherit;
-    margin-left: 0.5rem;
-}
+    .site-title {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: inherit;
+        margin-left: 0.5rem;
+    }
 
-#menu-toggle {
-    display: none;
-    /* Hide hamburger on desktop */
-}
+    #menu-toggle {
+        display: none;
+        /* Hide hamburger on desktop */
+    }
 
-#nav-list {
-    display: flex;
-    /* Show links horizontally */
-}
+    #nav-list {
+        display: flex;
+        /* Show links horizontally */
+    }
 
-#nav-list li a {
-    border: none;
-}
+    #nav-list li a {
+        border: none;
+    }
 
-#nav-list li a:hover {
-    color: var(--secondary);
-}
+    #nav-list li a:hover {
+        color: var(--secondary);
+    }
 
-/* --- Grid View Layout --- */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
+    /* --- Grid View Layout --- */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
 
-/* --- List View Layout --- */
-.list section {
-    flex-direction: row;
-    /* Row layout for desktop list */
-    justify-content: space-between;
-    align-items: center;
-}
+    /* --- List View Layout --- */
+    .list section {
+        flex-direction: row;
+        /* Row layout for desktop list */
+        justify-content: space-between;
+        align-items: center;
+    }
 
-.list h3 {
-    width: 25%;
-    margin: 0;
-}
+    .list h3 {
+        width: 25%;
+        margin: 0;
+    }
 
-.list p {
-    margin: 0;
-}
+    .list p {
+        margin: 0;
+    }
 
-footer {
-    display: flex;
-    justify-content: space-around;
-    text-align: left;
+    footer {
+        display: flex;
+        justify-content: space-around;
+        text-align: left;
+    }
+
 }
