@@ -8,6 +8,33 @@ const courses = [
 ];
 
 const courseContainer = document.querySelector('#course-list');
+const courseDetails = document.getElementById("course-details");
+
+courseDetails.addEventListener("click", (event) => {
+    if (event.target === courseDetails) {
+        courseDetails.close();
+    }
+});
+
+// Modal render function
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = `
+        <button id="closeModal" aria-label="Close dialog window">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Status</strong>: ${course.completed ? 'Completed' : 'In progress'}</p>
+    `;
+
+    courseDetails.showModal();
+
+    const closeModalBtn = courseDetails.querySelector("#closeModal");
+    if (closeModalBtn) {
+        closeModalBtn.addEventListener("click", () => {
+            courseDetails.close();
+        });
+    }
+}
 
 function displayCourses(filteredCourses) {
     courseContainer.innerHTML = ""; // Clear existing content
@@ -18,6 +45,11 @@ function displayCourses(filteredCourses) {
 
         // Match the screenshot text: "SUBJECT NUMBER"
         card.textContent = `${course.subject} ${course.number}`;
+
+        // Open details dialog when the course card is clicked
+        card.addEventListener("click", () => {
+            displayCourseDetails(course);
+        });
 
         // Add a "completed" class if the course is done (to change color in CSS)
         if (course.completed) {
