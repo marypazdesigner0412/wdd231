@@ -287,16 +287,17 @@ footer {
 }
 
 .level-gold .badge {
-    background-color: #fff9e6;
-    color: #795b01;
-    border: 1px solid #ffe699;
+    background-color: var(--secondary);
+    color: #000;
+    border: none;
 }
 
 .level-silver .badge {
-    background-color: #f2f2f2;
-    color: #666;
-    border: 1px solid #ddd;
+    background-color: #e9e9ea;
+    color: #333;
+    border: 1px solid #cfcfcf;
 }
+
 /* ==========================================================================
    Join Page & Form Layout (Mobile First)
    ========================================================================== */
