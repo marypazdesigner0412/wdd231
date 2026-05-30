@@ -134,3 +134,10 @@
         gap: 1.5rem;
     }
 }
+/* ==========================================================================
+   Desktop / Tablet Split Layout (Applies automatically above 700px width)
+   ========================================================================== */
+.join-main-layout {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+}

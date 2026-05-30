@@ -297,3 +297,130 @@ footer {
     color: #666;
     border: 1px solid #ddd;
 }
+/* ==========================================================================
+   Join Page & Form Layout (Mobile First)
+   ========================================================================== */
+
+.join-main-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 1.2rem;
+    font-weight: 600;
+}
+
+input,
+select,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 0.65rem;
+    margin-top: 0.35rem;
+    border: 1px solid #767676;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button[type="submit"] {
+    background-color: #003366;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+/* Membership Card Designs */
+.membership-card {
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    background-color: #fcfcfc;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* INITIAL ENTRANCE LOAD ANIMATION */
+@keyframes fadeInUpFade {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.intro-animation {
+    opacity: 0;
+    animation: fadeInUpFade 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Staggered load delays to draw smooth focus */
+#card-np {
+    animation-delay: 0.15s;
+}
+
+#card-bronze {
+    animation-delay: 0.3s;
+}
+
+#card-silver {
+    animation-delay: 0.45s;
+}
+
+#card-gold {
+    animation-delay: 0.60s;
+}
+
+/* Accessible Dialog Styling */
+dialog {
+    border: none;
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 500px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+/* ==========================================================================
+   Thank You Page Target Styles
+   ========================================================================== */
+.thankyou-header-block {
+    text-align: center;
+    padding: 2rem 1rem 0 1rem;
+}
+
+.output-wrapper {
+    background-color: #f4f8fa;
+    border-top: 4px solid #003366;
+    padding: 2rem;
+    margin: 3rem auto;
+    max-width: 650px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.data-row {
+    margin: 0.8rem 0;
+    font-size: 1.05rem;
+}
+
+.data-label {
+    font-weight: bold;
+    color: #003366;
+}
