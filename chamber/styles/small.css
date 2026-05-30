@@ -288,7 +288,7 @@ footer {
 
 .level-gold .badge {
     background-color: #fff9e6;
-    color: #b38600;
+    color: #795b01;
     border: 1px solid #ffe699;
 }
 
@@ -457,6 +457,6 @@ dialog::backdrop {
 
 /* Make the Gold title pop even more */
 #card-gold h3 {
-    color: #b38600;
+    color: #856401;
     font-weight: bold;
 }
