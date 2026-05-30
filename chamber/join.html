@@ -22,48 +22,63 @@
 
 <body>
 
-    <header>
-        <h1>Chamber of Commerce</h1>
-    </header>
+<header>
+    <div class="logo-box">
+        <img src="images/chamber-logo.png" alt="Paraguaná Chamber Logo">
+        <span class="site-title">Cámara de Comercio Paraguaná</span>
+    </div>
+    <nav>
+        <button id="menu-toggle">☰</button>
+        <ul id="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html" class="active">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+</header>
 
     <main class="join-main-layout">
+       
+        <h1>Chamber Membership Application</h1>
+    
         <section class="form-container">
             <h2>Membership Application</h2>
             <form method="get" action="thankyou.html">
-
+    
                 <label title="First Name">
                     First Name *
                     <input type="text" name="firstName" id="firstName" autocomplete="given-name" required>
                 </label>
-
+    
                 <label title="Last Name">
                     Last Name *
                     <input type="text" name="lastName" id="lastName" autocomplete="family-name" required>
                 </label>
-
+    
                 <label title="Organizational Title">
                     Organizational Title
                     <input type="text" name="orgTitle" id="orgTitle" autocomplete="organization-title"
                         pattern="[A-Za-z\s\-]{7,}"
                         title="Minimum 7 characters required. Only letters, spaces, and hyphens are accepted.">
                 </label>
-
+    
                 <label title="Email Address">
                     Email Address *
                     <input type="email" name="email" id="email" autocomplete="email" placeholder="example@domain.com"
                         required>
                 </label>
-
+    
                 <label title="Mobile Phone Number">
                     Mobile Phone Number *
                     <input type="tel" name="phone" id="phone" autocomplete="tel" required>
                 </label>
-
+    
                 <label title="Business or Organization Name">
                     Business/Organization Name *
                     <input type="text" name="orgName" id="orgName" autocomplete="organization" required>
                 </label>
-
+    
                 <label title="Membership Level">
                     Membership Level *
                     <select name="membershipLevel" id="membershipLevel" required>
@@ -74,36 +89,36 @@
                         <option value="gold">Gold Membership</option>
                     </select>
                 </label>
-
+    
                 <label title="Business Description">
                     Business/Organization Description
                     <textarea name="description" id="description" rows="5"></textarea>
                 </label>
-
+    
                 <input type="hidden" name="timestamp" id="formTimestamp">
-
+    
                 <button type="submit">Submit Application</button>
             </form>
         </section>
-
+    
         <section class="cards-container">
             <h2>Available Levels</h2>
-
+    
             <div class="membership-card intro-animation" id="card-np">
                 <h3>Non-Profit</h3>
                 <button type="button" class="open-modal-btn" data-modal="modal-np">More Info</button>
             </div>
-
+    
             <div class="membership-card intro-animation" id="card-bronze">
                 <h3>Bronze</h3>
                 <button type="button" class="open-modal-btn" data-modal="modal-bronze">More Info</button>
             </div>
-
+    
             <div class="membership-card intro-animation" id="card-silver">
                 <h3>Silver</h3>
                 <button type="button" class="open-modal-btn" data-modal="modal-silver">More Info</button>
             </div>
-
+    
             <div class="membership-card intro-animation" id="card-gold">
                 <h3>Gold</h3>
                 <button type="button" class="open-modal-btn" data-modal="modal-gold">More Info</button>

@@ -424,3 +424,39 @@ dialog::backdrop {
     font-weight: bold;
     color: #003366;
 }
+
+/* --- Membership Card Tier Variations --- */
+
+/* 1. Non-Profit */
+#card-np {
+    border-left: 5px solid #767676;
+
+}
+
+/* 2. Bronze */
+#card-bronze {
+    border-left: 5px solid #cd7f32;
+    background-color: #fdfaf7;
+
+}
+
+/* 3. Silver */
+#card-silver {
+    border-left: 5px solid #b0c4de;
+    background-color: #f7f9fa;
+
+}
+
+/* 4. Gold (Premium Accent matching Médanos Gold) */
+#card-gold {
+    border: 2px solid var(--secondary);
+    border-left: 6px solid var(--secondary);
+    background-color: #fffdf3;
+    box-shadow: 0 4px 10px rgba(225, 173, 1, 0.15);
+}
+
+/* Make the Gold title pop even more */
+#card-gold h3 {
+    color: #b38600;
+    font-weight: bold;
+}
