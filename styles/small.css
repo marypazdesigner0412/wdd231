@@ -145,6 +145,10 @@ nav {
     margin: 5px 15px;
     padding: 10px;
     font-weight: bold;
+    color: #000;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
 }
 
 /* --- Course List Styling (Injected by JS) --- */
@@ -156,12 +160,6 @@ nav {
     padding: 15px;
 }
 
-.course-card {
-    color: #000;
-    border-radius: 5px;
-    text-align: center;
-    transition: background-color 0.3s ease;
-}
 
 /* Styles applied when the JS detects course.completed is true */
 .course-card.completed {
