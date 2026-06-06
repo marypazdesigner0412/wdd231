@@ -65,7 +65,7 @@ header img {
 }
 
 #nav-list li a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     display: block;
     padding: 1rem;
@@ -465,4 +465,143 @@ dialog::backdrop {
 #card-gold h3 {
     color: #856401;
     font-weight: bold;
+}
+
+/* ==========================================================================
+   CHAMBER DISCOVER PAGE ADDITIONS
+   ========================================================================== */
+
+.visitor-box {
+    background-color: #f0f4f8;
+    color: #0b1a29;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 6px;
+    margin: 1.5rem auto;
+    max-width: 90%;
+    border-left: 5px solid #0284c7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.discover-welcome {
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Base grid setup for mobile */
+.gallery-wrapper {
+    display: grid;
+    gap: 1.5rem;
+    padding: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "area1"
+        "area2"
+        "area3"
+        "area4"
+        "area5"
+        "area6"
+        "area7"
+        "area8";
+}
+
+/* Card layout wrapper */
+.card {
+    background: #ffffff;
+    border: 1px solid #e4e7eb;
+    border-radius: 8px;
+    padding: 1.2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card h2 {
+    font-size: 1.25rem;
+    margin-top: 0;
+    color: #102a43;
+}
+
+.card figure {
+    margin: 0 0 1rem 0;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+    object-fit: fill;
+    transform: scale(1.15);
+}
+
+.card address {
+    font-style: normal;
+    font-weight: 600;
+    color: #334e68;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #334e68;
+    margin-bottom: 1.5rem;
+}
+
+.btn-learn {
+    background-color: #014265;
+    color: #ffffff;
+    border: none;
+    padding: 0.65rem 1rem;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: auto;
+    transition: background-color 0.2s ease;
+}
+
+/* Grid Area Bindings */
+.card-1 {
+    grid-area: area1;
+}
+
+.card-2 {
+    grid-area: area2;
+}
+
+.card-3 {
+    grid-area: area3;
+}
+
+.card-4 {
+    grid-area: area4;
+}
+
+.card-5 {
+    grid-area: area5;
+}
+
+.card-6 {
+    grid-area: area6;
+}
+
+.card-7 {
+    grid-area: area7;
+}
+
+.card-8 {
+    grid-area: area8;
+}
+
+.btn-learn:hover {
+    background-color: #0369a1;
+    /* A slightly darker blue */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }

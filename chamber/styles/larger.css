@@ -181,3 +181,62 @@
         margin-bottom: 1.2rem;
     }
 }
+
+/* ==========================================================================
+   Chamber Discover Page - Advanced Responsive Grid & Effects
+   ========================================================================== */
+
+/* MEDIUM SCREENS (641px to 1024px wide) */
+@media (min-width: 641px) {
+    .gallery-wrapper {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        grid-template-areas:
+            "area1 area1"
+            "area2 area3"
+            "area4 area3"
+            "area5 area6"
+            "area7 area6"
+            "area8 area8";
+    }
+
+    .card figure {
+        margin: 0 0 1rem 0;
+        overflow: hidden;
+        border-radius: 4px;
+    }
+
+    .card img {
+        width: 100%;
+        max-width: 100%;
+        height: 200px;
+        object-fit: cover;
+        /* This will now work beautifully with a clean source photo! */
+        display: block;
+        transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1),
+            filter 0.3s ease;
+    }
+
+    .card figure:hover img {
+        transform: scale(1.05);
+        /* Clean, standard hover zoom */
+        filter: saturate(1.2) brightness(1.05);
+    }
+}
+
+/* LARGE SCREENS (1025px and above) */
+@media (min-width: 1025px) {
+    .gallery-wrapper {
+        grid-template-columns: 1fr 1fr 1fr;
+        /* Transitions to a 3-column framework */
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        /* Completely reshuffled visual structure utilizing the same 8 elements */
+        grid-template-areas:
+            "area1 area1 area2"
+            "area3 area4 area2"
+            "area3 area5 area6"
+            "area7 area8 area6";
+    }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cámara de Comercio Paraguaná | Discover</title>
+    <meta name="description"
+        content="Discover Paraguaná's outstanding items of interest, natural landmarks, historic locations, and tourist attractions.">
+    <meta name="author" content="Luzmary Paz">
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Discover Paraguaná | Cámara de Comercio Paraguaná">
+    <meta property="og:description"
+        content="Explore items of interest, landscapes, and heritage sites across the Paraguaná Peninsula.">
+    <meta property="og:image" content="https://marypazdesigner0412.github.io/wdd231/chamber/images/chamber-logo.png">
+    <meta property="og:url" content="https://marypazdesigner0412.github.io/wdd231/chamber/discover.html">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 700px)">
+
+    <script src="scripts/discover.js" type="module" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-box">
+            <img src="images/chamber-logo.png" alt="Paraguaná Chamber Logo">
+            <span class="site-title">Cámara de Comercio Paraguaná</span>
+        </div>
+        <nav>
+            <button id="menu-toggle">☰</button>
+            <ul id="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="visitor-message" class="visitor-box"></div>
+
+        <section class="discover-welcome">
+            <h1>Discover Paraguaná</h1>
+            <p>Explore the natural wonders, industrial landscapes, and rich historical heritage of our unique peninsula.
+            </p>
+        </section>
+
+        <section id="gallery-container" class="gallery-wrapper">
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-contact">
+            <p><strong>Cámara de Comercio Paraguaná</strong></p>
+            <p>Punto Fijo, Falcón, Venezuela</p>
+            <p>+58 (412) 772.30.22 | luzmapaz@gmail.com</p>
+        </div>
+        <div class="footer-info">
+            <p>&copy; <span id="year"></span> | Luzmary Paz | WDD 231</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
