@@ -10,6 +10,14 @@
     <meta name="author" content="Luzmary Paz">
     <link rel="icon" href="favicon.ico">
 
+    <meta property="og:title" content="Join the Paraguaná Chamber of Commerce - Build Your Network" />
+    <meta property="og:description"
+        content="Unlock premium directory exposure, exclusive local training programs, and golden homepage advertising spots. Apply for your membership slot today!" />
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1596125160903-886d34b2210c?auto=format&fit=crop&w=600&h=400&q=75" />
+    <meta property="og:url" content="https://luzmarypaz.github.io/wdd231/chamber/join.html" />
+    <meta property="og:type" content="website" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -45,43 +53,43 @@
         <section class="form-container">
             <h2>Membership Application</h2>
             <form method="get" action="thankyou.html">
-    
-                <label title="First Name">
+            
+                <label>
                     First Name *
-                    <input type="text" name="firstName" id="firstName" autocomplete="given-name" required>
+                    <input type="text" name="firstName" id="firstName" autocomplete="given-name" title="First Name" required>
                 </label>
-    
-                <label title="Last Name">
+            
+                <label>
                     Last Name *
-                    <input type="text" name="lastName" id="lastName" autocomplete="family-name" required>
+                    <input type="text" name="lastName" id="lastName" autocomplete="family-name" title="Last Name" required>
                 </label>
-    
-                <label title="Organizational Title">
+            
+                <label>
                     Organizational Title
-                    <input type="text" name="orgTitle" id="orgTitle" autocomplete="organization-title"
-                        pattern="[A-Za-z\s\-]{7,}"
+                    <input type="text" name="orgTitle" id="orgTitle" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}"
                         title="Minimum 7 characters required. Only letters, spaces, and hyphens are accepted.">
                 </label>
-    
-                <label title="Email Address">
+            
+                <label>
                     Email Address *
                     <input type="email" name="email" id="email" autocomplete="email" placeholder="example@domain.com"
+                        title="Email Address" required>
+                </label>
+            
+                <label>
+                    Mobile Phone Number *
+                    <input type="tel" name="phone" id="phone" autocomplete="tel" title="Mobile Phone Number" required>
+                </label>
+            
+                <label>
+                    Business/Organization Name *
+                    <input type="text" name="orgName" id="orgName" autocomplete="organization" title="Business or Organization Name"
                         required>
                 </label>
-    
-                <label title="Mobile Phone Number">
-                    Mobile Phone Number *
-                    <input type="tel" name="phone" id="phone" autocomplete="tel" required>
-                </label>
-    
-                <label title="Business or Organization Name">
-                    Business/Organization Name *
-                    <input type="text" name="orgName" id="orgName" autocomplete="organization" required>
-                </label>
-    
-                <label title="Membership Level">
+            
+                <label>
                     Membership Level *
-                    <select name="membershipLevel" id="membershipLevel" required>
+                    <select name="membershipLevel" id="membershipLevel" title="Membership Level" required>
                         <option value="" disabled selected>Please select a level...</option>
                         <option value="np">NP Membership (Non-Profit / Free)</option>
                         <option value="bronze">Bronze Membership</option>
@@ -89,14 +97,14 @@
                         <option value="gold">Gold Membership</option>
                     </select>
                 </label>
-    
-                <label title="Business Description">
+            
+                <label>
                     Business/Organization Description
-                    <textarea name="description" id="description" rows="5"></textarea>
+                    <textarea name="description" id="description" rows="5" title="Business Description"></textarea>
                 </label>
-    
+            
                 <input type="hidden" name="timestamp" id="formTimestamp">
-    
+            
                 <button type="submit">Submit Application</button>
             </form>
         </section>
