@@ -373,22 +373,7 @@ button[type="submit"] {
     animation: fadeInUpFade 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-/* Staggered load delays to draw smooth focus */
-#card-np {
-    animation-delay: 0.15s;
-}
-
-#card-bronze {
-    animation-delay: 0.3s;
-}
-
-#card-silver {
-    animation-delay: 0.45s;
-}
-
-#card-gold {
-    animation-delay: 0.60s;
-}
+/* Staggered load delays are applied within each membership card rule below */
 
 /* Accessible Dialog Styling */
 dialog {
@@ -436,6 +421,7 @@ dialog::backdrop {
 /* 1. Non-Profit */
 #card-np {
     border-left: 5px solid #767676;
+    animation-delay: 0.15s;
 
 }
 
@@ -443,6 +429,7 @@ dialog::backdrop {
 #card-bronze {
     border-left: 5px solid #cd7f32;
     background-color: #fdfaf7;
+    animation-delay: 0.3s;
 
 }
 
@@ -450,6 +437,7 @@ dialog::backdrop {
 #card-silver {
     border-left: 5px solid #b0c4de;
     background-color: #f7f9fa;
+    animation-delay: 0.45s;
 
 }
 
@@ -459,6 +447,7 @@ dialog::backdrop {
     border-left: 6px solid var(--secondary);
     background-color: #fffdf3;
     box-shadow: 0 4px 10px rgba(225, 173, 1, 0.15);
+    animation-delay: 0.60s;
 }
 
 /* Make the Gold title pop even more */
