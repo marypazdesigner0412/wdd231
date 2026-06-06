@@ -1,0 +1,231 @@
+:root {
+    --primary-dark: #111827;
+    /* Deep Charcoal/Black for backgrounds & contrast */
+    --accent-neon: #CCFF00;
+    /* Volt Green/Neon Yellow for CTAs and highlights */
+    --text-light: #F9FAFB;
+    /* Off-white for dark background readability */
+    --text-dark: #374151;
+    /* Dark gray for secondary body text */
+    --card-bg: #1F2937;
+    /* Lighter charcoal for wireframe boxes */
+    --body-bg: #F3F4F6;
+    /* Light neutral background for the document */
+    --main-bg: #FFFFFF;
+    /* Pure white card canvas background */
+    --border-gray: #E5E7EB;
+    /* Subtle divider line gray */
+}
+
+/* --------------------------------------------------
+   TYPOGRAPHY & BASE STYLES
+-------------------------------------------------- */
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--body-bg);
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    background-color: var(--primary-dark);
+    color: var(--text-light);
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 5px solid var(--accent-neon);
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 0 10px 0;
+}
+
+header p {
+    font-style: italic;
+    color: #9CA3AF;
+    margin: 0;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: var(--main-bg);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+section {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border-gray);
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+/* Headings application */
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
+    color: var(--primary-dark);
+    text-transform: uppercase;
+    margin-top: 0;
+    border-left: 4px solid var(--accent-neon);
+    padding-left: 10px;
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3rem;
+    color: var(--primary-dark);
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Color Swatch Component */
+.swatch-group {
+    margin-top: 20px;
+}
+
+.swatch {
+    display: inline-block;
+    width: 120px;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-right: 15px;
+    font-size: 0.9rem;
+    border: 1px solid #D1D5DB;
+}
+
+.swatch-dark {
+    background-color: #111827;
+    color: #F9FAFB;
+}
+
+.swatch-accent {
+    background-color: #CCFF00;
+    color: #111827;
+}
+
+.swatch-light {
+    background-color: #F9FAFB;
+    color: #111827;
+}
+
+/* Typography Special Previews */
+.font-preview-oswald {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+}
+
+.font-preview-montserrat {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+}
+
+/* --------------------------------------------------
+   WIREFRAME SIMULATION STYLES
+-------------------------------------------------- */
+.wireframe-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .wireframe-container {
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+.wf-window {
+    background-color: var(--primary-dark);
+    color: var(--text-light);
+    padding: 15px;
+    border-radius: 6px;
+    font-family: monospace;
+    font-size: 0.8rem;
+}
+
+.wf-window h4 {
+    text-align: center;
+    margin: 0 0 15px 0;
+    color: var(--accent-neon);
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Dummy Wireframe Layout Blocks */
+.wf-nav {
+    background: #374151;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.wf-hero {
+    background: #4B5563;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.wf-hero-desktop {
+    height: 140px;
+}
+
+.wf-grid {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.desktop-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.wf-box {
+    background: var(--card-bg);
+    padding: 15px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px dashed #6B7280;
+}
+
+.wf-footer {
+    background: #1F2937;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.7rem;
+    border-radius: 4px;
+}
+
+/* Document Footer */
+.site-plan-footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.85rem;
+    color: #6B7280;
+}
