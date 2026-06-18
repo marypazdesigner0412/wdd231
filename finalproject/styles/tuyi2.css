@@ -544,3 +544,57 @@ footer h4,
     font-weight: 700;
     letter-spacing: 0.05em;
 }
+
+footer ul,
+.footer-nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+footer li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer-socials {
+    margin-top: 30px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.social-heading {
+    color: #E5E7EB !important;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin-bottom: 15px;
+}
+
+.social-icons-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+
+.social-svg {
+    width: 28px;
+    height: 28px;
+    fill: #FFFFFF;
+    transition: transform 0.2s ease, fill 0.2s ease;
+}
+
+.social-icons-grid a:hover .social-svg,
+.social-icons-grid a:focus .social-svg {
+    fill: #CCFF00 !important;
+    transform: scale(1.15);
+    
+}
+
+.social-icons-grid a {
+    outline: none;
+    display: inline-block;
+}
