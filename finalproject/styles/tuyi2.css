@@ -343,11 +343,11 @@ h4 {
     margin-bottom: 20px;
 }
 
-.form-group label {
+..form-group label {
     display: block;
     margin-bottom: 5px;
     font-weight: 700;
-    color: #111827
+    color: #111827;
 }
 
 input[type="text"],
@@ -576,7 +576,7 @@ footer li {
     display: flex;
     justify-content: center;
     gap: 20px;
-    
+
 }
 
 
@@ -591,10 +591,176 @@ footer li {
 .social-icons-grid a:focus .social-svg {
     fill: #CCFF00 !important;
     transform: scale(1.15);
-    
+
 }
 
 .social-icons-grid a {
     outline: none;
     display: inline-block;
+}
+
+.btn-secondary,
+footer button,
+#schedule button,
+.registration-info button,
+button[type="button"],
+input[type="button"] {
+    background-color: #111827 !important;
+    /* Keeps the dark button base styling */
+    color: #FFFFFF !important;
+    /* FORCES text to pure white for crisp contrast! */
+    border: 1px solid #E5E7EB !important;
+    /* Light gray border to help define the button shape */
+}
+
+/* If the element is a primary action button, ensure it uses dark text over a neon background instead */
+.btn-primary,
+input[type="submit"] {
+    background-color: #CCFF00 !important;
+    /* Bright neon background */
+    color: #0B0F19 !important;
+    /* Deep dark text over bright neon passes perfectly */
+    font-weight: 700;
+}
+
+#schedule button,
+footer button,
+.registration-info button,
+.btn-secondary,
+button,
+html body input[type="button"] {
+    background-color: #111827 !important;
+    /* Keep the dark background */
+    color: #FFFFFF !important;
+    /* Force text to pure white for perfect contrast! */
+    border: 1px solid #FFFFFF !important;
+    /* Add a clean white border for sharp definition */
+    font-weight: 700 !important;
+    /* Make the text bold and easy to read */
+}
+
+footer h1,
+footer h2,
+.footer-logo,
+.brand-name,
+.logo {
+    color: #FFFFFF !important;
+    /* Forces your brand name to brilliant white */
+    font-weight: 800 !important;
+    opacity: 1 !important;
+    /* Ensures no transparency is watering down the color */
+}
+
+/* 2. Fix the 3 interactive link elements contrast (image_83aee4.png) */
+footer a,
+footer a:link,
+footer a:visited,
+.footer-nav-list a,
+.social-icons-grid a {
+    color: #FFFFFF !important;
+    /* Forces link text to pure white */
+    opacity: 1 !important;
+}
+
+/* 3. Force the 3 social media icon paths to stay highly visible white */
+.social-svg,
+footer svg,
+footer svg path {
+    fill: #FFFFFF !important;
+    /* Forces SVG icons to crisp white */
+}
+
+/* 4. Ensure hover states remain perfectly compliant with neon yellow */
+footer a:hover,
+footer a:focus,
+.social-icons-grid a:hover .social-svg {
+    color: #CCFF00 !important;
+    /* Beautiful high-contrast neon on hover */
+    fill: #CCFF00 !important;
+}
+
+.hero p,
+.hero-description,
+.banner p,
+header+section p {
+    color: #E5E7EB !important;
+    /* Brighter, high-contrast crisp off-white */
+    opacity: 1 !important;
+    /* Ensures no background transparency fades it out */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    /* Adds a subtle shadow for extra crispness */
+}
+
+#programs p,
+.program-details p,
+.matrix-card p,
+main section:not(.bg-dark-section) p {
+    color: #2D3748 !important;
+    /* Restores a deep, high-contrast charcoal color */
+    opacity: 1 !important;
+    /* Ensures full visibility */
+}
+
+button,
+.btn-secondary,
+a.btn-secondary,
+.registration-info button,
+#programs button {
+    background-color: #111827 !important;
+    /* Keep the sleek dark background */
+    color: #FFFFFF !important;
+    /* Force the text to bright white! */
+    border: 1px solid #FFFFFF !important;
+    /* Add a clean border so the button shape stands out */
+}
+
+/* Ensure the text inside remains white even when hovered or focused */
+button:hover,
+.btn-secondary:hover,
+a.btn-secondary:hover {
+    background-color: #CCFF00 !important;
+    /* Neon yellow hover background */
+    color: #111827 !important;
+    /* Dark text on neon yellow hover passes perfectly */
+}
+
+html body a[class*="btn"],
+html body .btn-secondary,
+html body #programs a,
+html body footer a[class*="btn"] {
+    background-color: #111827 !important;
+    /* Keep the sleek dark background */
+    color: #FFFFFF !important;
+    /* Force the text to bright white! */
+    border: 1px solid #FFFFFF !important;
+    /* Sharp white border definition */
+    display: inline-block;
+    text-decoration: none !important;
+}
+
+/* Ensure the text stays fully visible on states like :visited, :hover, and :active */
+html body a[class*="btn"]:visited,
+html body .btn-secondary:visited {
+    color: #FFFFFF !important;
+    /* Stops the browser from making it violet/dark gray */
+}
+
+html body a[class*="btn"]:hover,
+html body .btn-secondary:hover,
+html body a[class*="btn"]:focus {
+    background-color: #CCFF00 !important;
+    color: #111827 !important;
+
+}
+
+html body h2.quick-join-title,
+html body h3.quick-join-title,
+html body .quick-join h2,
+html body .quick-join h3,
+html body [class*="join"] h2,
+html body [class*="join"] h3 {
+    color: var(--accent-neon) !important;
+    opacity: 1 !important;
+    font-weight: 800 !important;
+    text-transform: uppercase;
 }
