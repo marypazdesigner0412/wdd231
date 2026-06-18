@@ -1,0 +1,542 @@
+:root {
+    --primary-dark: #111827;
+    --accent-neon: #CCFF00;
+    --accent-neon-hover: #b2df00;
+    --card-bg: #1F2937;
+    --text-light: #F9FAFB;
+    --text-dark: #1F2937;
+    --text-muted: #EAECEF;
+    --bg-light: #FFFFFF;
+    --bg-alt: #F3F4F6;
+    --border-color: #E5E7EB;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+    line-height: 1.6;
+    padding-top: 75px;
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--primary-dark);
+}
+
+/* LOCAL STORAGE NOTIFICATION BANNER STYLING */
+.visit-banner {
+    background-color: #2563EB;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+/* ==========================================================================
+   NAVIGATION DESKTOP FLEX LAYOUT
+   ========================================================================== */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-dark);
+    color: var(--text-light);
+    z-index: 1000;
+    border-bottom: 2px solid var(--accent-neon);
+}
+
+.static-nav {
+    position: relative !important;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-light);
+}
+
+.logo span {
+    color: var(--accent-neon);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-light);
+    padding: 5px 0;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--accent-neon);
+}
+
+.nav-cta {
+    background-color: var(--accent-neon);
+    color: var(--primary-dark) !important;
+    padding: 8px 18px !important;
+    border-radius: 4px;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-light);
+    margin: 4px 0;
+}
+
+/* ==========================================================================
+   HERO DISPLAY FRAME
+   ========================================================================== */
+.hero-banner {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #111827 0%, #1c2638 100%);
+    color: var(--text-light);
+}
+
+.hero-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    color: var(--text-light);
+}
+
+.hero-content .subheading {
+    font-size: 1.8rem;
+    color: var(--accent-neon);
+    margin-bottom: 20px;
+}
+
+.quick-join-pane {
+    flex: 0 0 360px;
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.quick-join-pane h3 {
+    color: var(--text-light);
+    margin-bottom: 15px;
+}
+
+.quick-join-pane p {
+    color: var(--text-muted);
+    margin-bottom: 15px;
+}
+
+.filter-controls .btn {
+    margin-bottom: 10px;
+}
+
+/* ==========================================================================
+   PRODUCTION LEVEL CSS GRID SYSTEM LAYOUT
+   ========================================================================== */
+.section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+.section-intro {
+    margin-bottom: 30px;
+    color: #2d3748;
+    font-size: 1.1rem;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.matrix-card {
+    background-color: #FFFFFF;
+    border: 1px solid var(--border-color);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-header-block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.category-pill {
+    background-color: var(--primary-dark);
+    color: var(--text-light);
+    padding: 3px 10px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+
+.intensity-tag {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #854d0e;
+}
+
+.matrix-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.matrix-card p {
+    color: #2d3748;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+/* ==========================================================================
+   NATIVE DIALOG COMPONENT OVERRIDES
+   ========================================================================== */
+.custom-modal {
+    border: none;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: auto;
+    padding: 35px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.custom-modal::backdrop {
+    background: rgba(17, 24, 23, 0.85);
+}
+
+.modal-wrapper h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.modal-wrapper hr {
+    margin-bottom: 15px;
+    border: 0;
+    border-top: 2px solid var(--accent-neon);
+}
+
+.modal-wrapper p {
+    margin-bottom: 15px;
+}
+
+.modal-alert-box {
+    background-color: #FEF3C7;
+    border-left: 4px solid #D97706;
+    padding: 15px;
+    color: #92400E;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* ==========================================================================
+   FORM & INTERACTIVES UTILITIES
+   ========================================================================== */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--accent-neon, #CCFF00);
+    color: #111827;
+    font-weight: 700;
+}
+
+.btn-secondary, .button-variant-dark {
+    background-color: #111827;
+    color: #FFFFFF;
+    border: 1px solid var(--text-muted, #E5E7EB);
+    font-weight: 700;
+}
+
+.btn-accent {
+    background-color: transparent;
+    color: var(--accent-neon);
+    border: 2px solid var(--accent-neon);
+}
+
+.btn-sm {
+    padding: 6px 14px;
+    font-size: 0.8rem;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: #111827
+}
+
+input[type="text"],
+input[type="email"],
+.form-select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.bg-dark-section {
+    background-color: var(--primary-dark);
+    color: var(--text-light);
+}
+
+.bg-dark-section .section-title {
+    color: #fff;
+}
+
+.registration-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.registration-form-pane {
+    background: #FFFFFF;
+    color: #111827;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+/* SCHEDULE LAYOUT ELEMENTS */
+.bg-alt {
+    background-color: var(--bg-alt);
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+.schedule-table th,
+.schedule-table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid var(--border-color);
+}
+
+.schedule-table th {
+    background-color: var(--primary-dark);
+    color: #fff;
+}
+
+.time-col {
+    font-weight: 700;
+    background-color: #f9fafb;
+}
+
+.class-tag {
+    display: inline-block;
+    padding: 4px 10px;
+    background: #E5E7EB;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/* FORM ACTION PAGE STYLING */
+.action-success-wrap {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.success-billboard {
+    background: #fff;
+    padding: 50px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+.success-icon {
+    font-size: 4rem;
+    color: #10B981;
+    margin-bottom: 20px;
+}
+
+.parameter-receipt-box {
+    background-color: #F9FAFB;
+    border: 1px solid var(--border-color);
+    padding: 25px;
+    border-radius: 6px;
+    text-align: left;
+    margin: 25px 0;
+}
+
+.parameter-receipt-box p {
+    margin-bottom: 10px;
+    border-bottom: 1px dashed var(--border-color);
+    padding-bottom: 8px;
+}
+
+.parameter-receipt-box span {
+    font-weight: 700;
+    color: #2563EB;
+}
+
+.main-footer {
+    background: #0B0F19;
+    color: var(--text-muted);
+    padding: 30px 20px;
+    text-align: center;
+}
+
+/* ==========================================================================
+   SMALL SCREEN MEDIA QUERIES (Hamburger Collapse Transitions)
+   ========================================================================== */
+@media (max-width: 992px) {
+
+    .hero-container,
+    .registration-layout {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .quick-join-pane {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    
+    .nav-links {
+        position: absolute;
+        top: 68px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 68px);
+        background-color: var(--primary-dark);
+        flex-direction: column;
+        padding-top: 40px;
+        transition: left 0.3s ease;
+    
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+}
+
+footer a,
+footer a:link,
+footer a:visited {
+    color: #FFFFFF !important;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+footer a:hover,
+footer a:focus {
+    color: #CCFF00 !important;
+    text-decoration: none;
+    outline: none;
+}
+
+footer h3,
+footer h4,
+.footer-heading {
+    color: #E5E7EB !important;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}

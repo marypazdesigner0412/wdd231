@@ -1,0 +1,107 @@
+[
+    {
+        "id": 1,
+        "name": "Kettlebell Cleans",
+        "category": "Strength",
+        "intensity": "High",
+        "description": "Explosive multi-joint pull tracking hip hinge power and velocity metrics."
+    },
+    {
+        "id": 2,
+        "name": "Thruster Intervals",
+        "category": "Conditioning",
+        "intensity": "Elite",
+        "description": "Combined front squat and overhead push pressing block targeting cardiorespiratory engine capacity."
+    },
+    {
+        "id": 3,
+        "name": "Rowing Endurance Splits",
+        "category": "Conditioning",
+        "intensity": "Medium",
+        "description": "Low-impact metabolic recovery programming focusing on constant pacing splits over 5000m."
+    },
+    {
+        "id": 4,
+        "name": "Barbell Deadlifts",
+        "category": "Strength",
+        "intensity": "High",
+        "description": "Pure structural posterior chain movement emphasizing strict alignment controls."
+    },
+    {
+        "id": 5,
+        "name": "Box Jump Cadence",
+        "category": "Conditioning",
+        "intensity": "High",
+        "description": "Plyometric development track establishing quick explosive footwork acceleration."
+    },
+    {
+        "id": 6,
+        "name": "Strict Overhead Press",
+        "category": "Strength",
+        "intensity": "Medium",
+        "description": "Vertical core stabilization sequence building high-end shoulder mechanics grid metrics."
+    },
+    {
+        "id": 7,
+        "name": "Wall Ball Targets",
+        "category": "Conditioning",
+        "intensity": "High",
+        "description": "Repetitive metabolic engine push throwing medicine targets to cross-sectional marks."
+    },
+    {
+        "id": 8,
+        "name": "Front Squat Holds",
+        "category": "Strength",
+        "intensity": "High",
+        "description": "Quad dominant anterior load tracking torso upright position structural frames."
+    },
+    {
+        "id": 9,
+        "name": "Double Under Cadence",
+        "category": "Conditioning",
+        "intensity": "Elite",
+        "description": "High-velocity rope rotation coordination drill for advanced metabolic stress tracking."
+    },
+    {
+        "id": 10,
+        "name": "Pull-Up Progressions",
+        "category": "Strength",
+        "intensity": "Medium",
+        "description": "Strict upper body vertical pull tracking shoulder blade activation thresholds."
+    },
+    {
+        "id": 11,
+        "name": "Dumbbell Snatch Runs",
+        "category": "Conditioning",
+        "intensity": "High",
+        "description": "Unilateral ground-to-overhead power transitions forcing core anti-rotation controls."
+    },
+    {
+        "id": 12,
+        "name": "Farmer Carry Spans",
+        "category": "Strength",
+        "intensity": "High",
+        "description": "Grip optimization tracks under high metabolic tension stresses walking distance marks."
+    },
+    {
+        "id": 13,
+        "name": "Burpee Box Step-Overs",
+        "category": "Conditioning",
+        "intensity": "Elite",
+        "description": "Agility system pushing maximum cardiovascular workload capacities across floor spans."
+    },
+    {
+        "id": 14,
+        "name": "Medicine Ball Slams",
+        "category": "Conditioning",
+        "intensity": "Low",
+        "description": "Explosive dynamic core core down-force mechanics designed for peak power release phases."
+    },
+    {
+        "id": 15,
+        "name": "Bench Press Base Matrix",
+        "category": "Strength",
+        "intensity": "Medium",
+        "description": "Horizontal chest stabilization track evaluating shoulder compression forces securely."
+    }
+]

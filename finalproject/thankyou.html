@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Registration complete page for new community athletes joining the TUYI2 Fit functional training network.">
+    <title>Registration Complete | TUYI2 Fit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;family=Oswald:wght@500;700&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/tuyi2.css">
+</head>
+
+<body class="bg-alt">
+
+    <nav class="navbar static-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">TUYI2<span>FIT</span></a>
+            <a href="index.html" class="btn btn-accent">Return Home</a>
+        </div>
+    </nav>
+
+    <main class="section-container action-success-wrap">
+        <div class="success-billboard">
+            <div class="success-icon">✔️</div>
+            <h1>Application Processing</h1>
+            <p>Your functional onboarding data payload has parsed successfully.</p>
+
+            <!-- CRITERION 7 DISPLAY TARGET DATA FIELD OVERLAYS -->
+            <div class="parameter-receipt-box">
+                <h3>Submitted Athlete Metrics:</h3>
+                <hr>
+                <p><strong>Athlete Name:</strong> <span id="param-name" class="fallback-txt">Loading
+                        parameters...</span></p>
+                <p><strong>Contact Route:</strong> <span id="param-email" class="fallback-txt">Loading
+                        parameters...</span></p>
+                <p><strong>Classification Tier:</strong> <span id="param-level" class="fallback-txt">Loading
+                        parameters...</span></p>
+                <p><strong>Identified Goal:</strong> <span id="param-goal" class="fallback-txt">Loading
+                        parameters...</span></p>
+            </div>
+            <a href="index.html" class="btn btn-secondary">Back to Training Matrix</a>
+        </div>
+    </main>
+
+    <script type="module" src="scripts/main.js"></script>
+</body>
+
+</html>
