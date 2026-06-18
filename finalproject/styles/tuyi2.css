@@ -387,8 +387,6 @@ input[type="email"],
     border-radius: 8px;
 }
 
-/* Ensure headings inside the white form pane remain dark (avoid inheriting
-   the light heading color from .bg-dark-section) */
 .registration-form-pane h2,
 .registration-form-pane h3,
 .registration-form-pane h4 {
@@ -620,20 +618,15 @@ footer button,
 button[type="button"],
 input[type="button"] {
     background-color: #111827 !important;
-    /* Keeps the dark button base styling */
     color: #FFFFFF !important;
-    /* FORCES text to pure white for crisp contrast! */
     border: 1px solid #E5E7EB !important;
-    /* Light gray border to help define the button shape */
+    
 }
 
-/* If the element is a primary action button, ensure it uses dark text over a neon background instead */
 .btn-primary,
 input[type="submit"] {
     background-color: #CCFF00 !important;
-    /* Bright neon background */
     color: #0B0F19 !important;
-    /* Deep dark text over bright neon passes perfectly */
     font-weight: 700;
 }
 
@@ -644,13 +637,10 @@ footer button,
 button,
 html body input[type="button"] {
     background-color: #111827 !important;
-    /* Keep the dark background */
     color: #FFFFFF !important;
-    /* Force text to pure white for perfect contrast! */
     border: 1px solid #FFFFFF !important;
-    /* Add a clean white border for sharp definition */
     font-weight: 700 !important;
-    /* Make the text bold and easy to read */
+    
 }
 
 footer h1,
@@ -659,37 +649,31 @@ footer h2,
 .brand-name,
 .logo {
     color: #FFFFFF !important;
-    /* Forces your brand name to brilliant white */
     font-weight: 800 !important;
     opacity: 1 !important;
-    /* Ensures no transparency is watering down the color */
+    
 }
 
-/* 2. Fix the 3 interactive link elements contrast (image_83aee4.png) */
 footer a,
 footer a:link,
 footer a:visited,
 .footer-nav-list a,
 .social-icons-grid a {
     color: #FFFFFF !important;
-    /* Forces link text to pure white */
     opacity: 1 !important;
 }
 
-/* 3. Force the 3 social media icon paths to stay highly visible white */
 .social-svg,
 footer svg,
 footer svg path {
     fill: #FFFFFF !important;
-    /* Forces SVG icons to crisp white */
+    
 }
 
-/* 4. Ensure hover states remain perfectly compliant with neon yellow */
 footer a:hover,
 footer a:focus,
 .social-icons-grid a:hover .social-svg {
     color: #CCFF00 !important;
-    /* Beautiful high-contrast neon on hover */
     fill: #CCFF00 !important;
 }
 
@@ -697,11 +681,8 @@ footer a:focus,
 .hero-description,
 .banner p {
     color: #E5E7EB !important;
-    /* Brighter, high-contrast crisp off-white */
     opacity: 1 !important;
-    /* Ensures no background transparency fades it out */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    /* Adds a subtle shadow for extra crispness */
 }
 
 #programs p,
@@ -709,9 +690,8 @@ footer a:focus,
 .matrix-card p,
 main section:not(.bg-dark-section) p {
     color: #2D3748 !important;
-    /* Restores a deep, high-contrast charcoal color */
     opacity: 1 !important;
-    /* Ensures full visibility */
+
 }
 
 button,
@@ -720,21 +700,16 @@ a.btn-secondary,
 .registration-info button,
 #programs button {
     background-color: #111827 !important;
-    /* Keep the sleek dark background */
     color: #FFFFFF !important;
-    /* Force the text to bright white! */
     border: 1px solid #FFFFFF !important;
-    /* Add a clean border so the button shape stands out */
+
 }
 
-/* Ensure the text inside remains white even when hovered or focused */
 button:hover,
 .btn-secondary:hover,
 a.btn-secondary:hover {
     background-color: #CCFF00 !important;
-    /* Neon yellow hover background */
     color: #111827 !important;
-    /* Dark text on neon yellow hover passes perfectly */
 }
 
 html body a[class*="btn"],
@@ -742,20 +717,17 @@ html body .btn-secondary,
 html body #programs a,
 html body footer a[class*="btn"] {
     background-color: #111827 !important;
-    /* Keep the sleek dark background */
     color: #FFFFFF !important;
-    /* Force the text to bright white! */
     border: 1px solid #FFFFFF !important;
-    /* Sharp white border definition */
     display: inline-block;
     text-decoration: none !important;
 }
 
-/* Ensure the text stays fully visible on states like :visited, :hover, and :active */
+
 html body a[class*="btn"]:visited,
 html body .btn-secondary:visited {
     color: #FFFFFF !important;
-    /* Stops the browser from making it violet/dark gray */
+
 }
 
 html body a[class*="btn"]:hover,
