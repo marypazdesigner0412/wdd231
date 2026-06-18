@@ -387,6 +387,14 @@ input[type="email"],
     border-radius: 8px;
 }
 
+/* Ensure headings inside the white form pane remain dark (avoid inheriting
+   the light heading color from .bg-dark-section) */
+.registration-form-pane h2,
+.registration-form-pane h3,
+.registration-form-pane h4 {
+    color: var(--text-dark);
+}
+
 /* SCHEDULE LAYOUT ELEMENTS */
 .bg-alt {
     background-color: var(--bg-alt);
