@@ -343,7 +343,7 @@ h4 {
     margin-bottom: 20px;
 }
 
-..form-group label {
+.form-group label {
     display: block;
     margin-bottom: 5px;
     font-weight: 700;
@@ -366,6 +366,12 @@ input[type="email"],
 
 .bg-dark-section .section-title {
     color: #fff;
+}
+
+.bg-dark-section h2,
+.bg-dark-section h3,
+.bg-dark-section h4 {
+    color: var(--text-light);
 }
 
 .registration-layout {
@@ -681,8 +687,7 @@ footer a:focus,
 
 .hero p,
 .hero-description,
-.banner p,
-header+section p {
+.banner p {
     color: #E5E7EB !important;
     /* Brighter, high-contrast crisp off-white */
     opacity: 1 !important;
