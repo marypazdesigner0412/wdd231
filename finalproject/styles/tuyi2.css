@@ -295,7 +295,7 @@ h4 {
 /* ==========================================================================
    FORM & INTERACTIVES UTILITIES
    ========================================================================== */
-.btn {
+.tuyi-button {
     display: inline-block;
     padding: 12px 24px;
     border-radius: 4px;
@@ -306,31 +306,32 @@ h4 {
     text-align: center;
 }
 
-.btn-primary {
+.tuyibutton-primary {
     background-color: var(--accent-neon, #CCFF00);
     color: #111827;
     font-weight: 700;
 }
 
-.btn-secondary, .button-variant-dark {
+.tuyibutton-secondary,
+.button-variant-dark {
     background-color: #111827;
     color: #FFFFFF;
     border: 1px solid var(--text-muted, #E5E7EB);
     font-weight: 700;
 }
 
-.btn-accent {
+.tuyibutton-accent {
     background-color: transparent;
     color: var(--accent-neon);
     border: 2px solid var(--accent-neon);
 }
 
-.btn-sm {
+.tuyibutton-sm {
     padding: 6px 14px;
     font-size: 0.8rem;
 }
 
-.btn-block {
+.tuyibutton-fullwidth {
     display: block;
     width: 100%;
 }
@@ -491,7 +492,7 @@ input[type="email"],
         display: flex;
     }
 
-    
+
     .nav-links {
         position: absolute;
         top: 68px;
@@ -502,7 +503,7 @@ input[type="email"],
         flex-direction: column;
         padding-top: 40px;
         transition: left 0.3s ease;
-    
+
     }
 
     .nav-links.active {

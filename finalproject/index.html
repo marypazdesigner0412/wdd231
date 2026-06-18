@@ -7,6 +7,14 @@
     <meta name="author" content="Luzmary Paz">
     <meta name="description"
         content="TUYI2 Fit is a premier functional fitness box dedicated to elite training matrix tracking, community high-performance coaching, and athletic transformation.">
+    <meta property="og:title" content="TUYI2 Fit | Functional Fitness Box for Athletes">
+    <meta property="og:description"
+        content="TUYI2 Fit is a premier functional fitness box offering elite coaching, athletic transformation, and community training in a dynamic performance environment.">
+    <meta property="og:image"
+        content="https://luzmapazdesigner0412.github.io/wdd231/finalproject/images/medanos-coro.webp">
+    <meta property="og:url" content="https://luzmapazdesigner0412.github.io/wdd231/finalproject/index.html">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="/wdd231/finalproject/images/medanos-coro.webp" type="image/webp">
     <title>TUYI2 Fit | Functional Fitness Box</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,6 +23,7 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="styles/tuyi2.css">
+    <link rel="stylesheet" href="styles/site-plan.css">
     <script type="module" src="scripts/main.js"></script>
 </head>
 
@@ -39,163 +48,169 @@
         </div>
     </nav>
 
-    <header class="hero-banner" id="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1>TUYI2 FIT</h1>
-                <p class="subheading">Functional Fitness Box</p>
-                <p class="hero-description">
-                    Formalize your passion. Transform your physical limits. Transition from casual trainee to an
-                    official community athlete today.
-                </p>
-                <a href="#register" class="btn btn-primary">Register Now / Get Trial</a>
-            </div>
-
-            <div class="quick-join-pane">
-                <h2>Quick Join</h2>
-                <p>Secure your spot for the next premium session.</p>
-                <form id="quick-form" class="hero-form">
-                    <div class="form-group">
-                        <input type="text" id="quick-name" placeholder="Full Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="quick-email" placeholder="Email Address" required>
-                    </div>
-                    <button type="submit" class="btn btn-accent btn-block">Claim Free Trial</button>
-                </form>
-            </div>
-        </div>
-    </header>
-
     <main class="main-content">
 
-        <!-- FEATURE 1: PROGRAM INTRO -->
-        <section id="programs" class="section-container">
-            <h2 class="section-title">Program Details</h2>
-            <div class="program-wrapper">
-                <div class="program-card">
-                    <div class="program-image-placeholder">
-                        <span class="icon-dumbbell" role="img" aria-label="Dumbbell">🏋️‍♂️</span>
-                    </div>
-                    <h3>High-Intensity Conditioning</h3>
-                    <p>
-                        Designed to scale for all skill levels. Our signature community-driven functional fitness
-                        structure pushes tactical stamina, mobility, and core athletic strength.
+        <header class="hero-banner" id="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1>TUYI2 FIT</h1>
+                    <p class="subheading">Functional Fitness Box</p>
+                    <p class="hero-description">
+                        Formalize your passion. Transform your physical limits. Transition from casual trainee to an
+                        official community athlete today.
                     </p>
-                    <a href="#register" class="btn btn-secondary">Explore Programs</a>
-                </div>
-            </div>
-        </section>
-
-        <!--CLASS SCHEDULE -->
-        <section id="schedule" class="section-container bg-alt">
-            <h2 class="section-title">Interactive Weekly Schedule</h2>
-
-            <!-- Mobile Compatibility Day Filters -->
-            <div class="schedule-filters">
-                <button class="filter-btn active" data-day="all">7 Days</button>
-                <button class="filter-btn" data-day="weekday">Weekdays</button>
-                <button class="filter-btn" data-day="weekend">Weekends</button>
-            </div>
-
-            <!-- Responsive Schedule Timetable -->
-            <div class="table-responsive">
-                <table class="schedule-table">
-                    <thead>
-                        <tr>
-                            <th>Time</th>
-                            <th>Mon / Wed / Fri</th>
-                            <th>Tue / Thu</th>
-                            <th>Sat / Sun</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr data-type="weekday">
-                            <td class="time-col">09:00 AM</td>
-                            <td><span class="class-tag">Functional Core</span></td>
-                            <td><span class="class-tag empty">—</span></td>
-                            <td><span class="class-tag variant">Community Box Open</span></td>
-                        </tr>
-                        <tr data-type="weekday">
-                            <td class="time-col">11:00 AM</td>
-                            <td><span class="class-tag empty">—</span></td>
-                            <td><span class="class-tag">Tactical Strength</span></td>
-                            <td><span class="class-tag variant">Elite Team Drill</span></td>
-                        </tr>
-                        <tr data-type="weekday">
-                            <td class="time-col">06:00 PM</td>
-                            <td><span class="class-tag">Advanced WOD</span></td>
-                            <td><span class="class-tag">Advanced WOD</span></td>
-                            <td><span class="class-tag empty">—</span></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <!-- FEATURE 3: MEMBERSHIP REGISTRATION / SIGN-UP HOOK -->
-        <section id="register" class="section-container bg-dark-section">
-            <div class="registration-layout">
-                <!-- Informational Value Column -->
-                <div class="registration-info">
-                    <h2>Join the Community</h2>
-                    <p>
-                        Stop casual training. Lock in your premium tiered tracking, custom athletic metrics, and full
-                        dynamic box access layout.
-                    </p>
-                    <div class="hook-box">
-                        <h3>Sign-Up Hook</h3>
-                        <p>First 20 registrations unlock an exclusive premium performance tracker shirt on day one.</p>
-                    </div>
+                    <a href="#register" class="tuyi-button tuyibutton-primary">Register Now / Get Trial</a>
                 </div>
 
-                <!-- Main Form Input Column -->
-                <div class="registration-form-pane">
-                    <h3>Membership Form</h3>
-                    <form id="main-signup-form">
+                <div class="quick-join-pane">
+                    <h2>Quick Join</h2>
+                    <p>Secure your spot for the next premium session.</p>
+                    <form id="quick-form" class="hero-form">
                         <div class="form-group">
-                            <label for="form-name">Name</label>
-                            <input type="text" id="form-name" placeholder="Enter your full name" required>
+                            <input type="text" id="quick-name" placeholder="Full Name" required>
                         </div>
                         <div class="form-group">
-                            <label for="form-email">Email</label>
-                            <input type="email" id="form-email" placeholder="Enter your email address" required>
+                            <input type="email" id="quick-email" placeholder="Email Address" required>
                         </div>
-                        <div class="form-group">
-                            <label for="form-message">Message / Goals</label>
-                            <textarea id="form-message" rows="4"
-                                placeholder="Tell us your physical goals..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block">Submit Application</button>
+                        <button type="submit" class="tuyi-button tuyibutton-accent tuyibutton-fullwidth">Claim Free
+                            Trial</button>
                     </form>
-                    <div id="form-feedback" class="form-feedback hidden"></div>
                 </div>
             </div>
-        </section>
+        </header>
 
-    </main>
+        <main class="main-content">
 
-    <!-- FOOTER WITH DYNAMIC INFO placeholders -->
-    <footer class="main-footer">
-        <div class="footer-container">
-            <div class="footer-brand">
-                <h2>TUYI2 Fit</h2>
-                <p>Formalizing and commercializing high-performance community coaching.</p>
+            <!-- FEATURE 1: PROGRAM INTRO -->
+            <section id="programs" class="section-container">
+                <h2 class="section-title">Program Details</h2>
+                <div class="program-wrapper">
+                    <div class="program-card">
+                        <div class="program-image-placeholder">
+                            <span class="icon-dumbbell" role="img" aria-label="Dumbbell">🏋️‍♂️</span>
+                        </div>
+                        <h3>High-Intensity Conditioning</h3>
+                        <p>
+                            Designed to scale for all skill levels. Our signature community-driven functional fitness
+                            structure pushes tactical stamina, mobility, and core athletic strength.
+                        </p>
+                        <a href="#register" class="tuyi-button tuyibutton-secondary">Explore Programs</a>
+                    </div>
+                </div>
+            </section>
+
+            <!--CLASS SCHEDULE -->
+            <section id="schedule" class="section-container bg-alt">
+                <h2 class="section-title">Interactive Weekly Schedule</h2>
+
+                <!-- Mobile Compatibility Day Filters -->
+                <div class="schedule-filters">
+                    <button class="filter-btn active" data-day="all">7 Days</button>
+                    <button class="filter-btn" data-day="weekday">Weekdays</button>
+                    <button class="filter-btn" data-day="weekend">Weekends</button>
+                </div>
+
+                <!-- Responsive Schedule Timetable -->
+                <div class="table-responsive">
+                    <table class="schedule-table">
+                        <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>Mon / Wed / Fri</th>
+                                <th>Tue / Thu</th>
+                                <th>Sat / Sun</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr data-type="weekday">
+                                <td class="time-col">09:00 AM</td>
+                                <td><span class="class-tag">Functional Core</span></td>
+                                <td><span class="class-tag empty">—</span></td>
+                                <td><span class="class-tag variant">Community Box Open</span></td>
+                            </tr>
+                            <tr data-type="weekday">
+                                <td class="time-col">11:00 AM</td>
+                                <td><span class="class-tag empty">—</span></td>
+                                <td><span class="class-tag">Tactical Strength</span></td>
+                                <td><span class="class-tag variant">Elite Team Drill</span></td>
+                            </tr>
+                            <tr data-type="weekday">
+                                <td class="time-col">06:00 PM</td>
+                                <td><span class="class-tag">Advanced WOD</span></td>
+                                <td><span class="class-tag">Advanced WOD</span></td>
+                                <td><span class="class-tag empty">—</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- FEATURE 3: MEMBERSHIP REGISTRATION / SIGN-UP HOOK -->
+            <section id="register" class="section-container bg-dark-section">
+                <div class="registration-layout">
+                    <!-- Informational Value Column -->
+                    <div class="registration-info">
+                        <h2>Join the Community</h2>
+                        <p>
+                            Stop casual training. Lock in your premium tiered tracking, custom athletic metrics, and
+                            full
+                            dynamic box access layout.
+                        </p>
+                        <div class="hook-box">
+                            <h3>Sign-Up Hook</h3>
+                            <p>First 20 registrations unlock an exclusive premium performance tracker shirt on day one.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Main Form Input Column -->
+                    <div class="registration-form-pane">
+                        <h3>Membership Form</h3>
+                        <form id="main-signup-form">
+                            <div class="form-group">
+                                <label for="form-name">Name</label>
+                                <input type="text" id="form-name" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email">Email</label>
+                                <input type="email" id="form-email" placeholder="Enter your email address" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Message / Goals</label>
+                                <textarea id="form-message" rows="4"
+                                    placeholder="Tell us your physical goals..."></textarea>
+                            </div>
+                            <button type="submit" class="tuyi-button tuyibutton-primary tuyibutton-fullwidth">Submit
+                                Application</button>
+                        </form>
+                        <div id="form-feedback" class="form-feedback hidden"></div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- FOOTER WITH DYNAMIC INFO placeholders -->
+        <footer class="main-footer">
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <h2>TUYI2 Fit</h2>
+                    <p>Formalizing and commercializing high-performance community coaching.</p>
+                </div>
+                <div class="footer-links-group">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="#programs">Programs</a></li>
+                        <li><a href="#schedule">Schedule</a></li>
+                        <li><a href="#register">Register</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-links-group">
-                <h3>Explore</h3>
-                <ul>
-                    <li><a href="#programs">Programs</a></li>
-                    <li><a href="#schedule">Schedule</a></li>
-                    <li><a href="#register">Register</a></li>
-                </ul>
+            <div class="footer-bottom">
+                <p>&copy; 2026 TUYI2 Fit. All Rights Reserved. Built with Responsive Web Standards.</p>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 TUYI2 Fit. All Rights Reserved. Built with Responsive Web Standards.</p>
-        </div>
-    </footer>
+        </footer>
 
 </body>
 
